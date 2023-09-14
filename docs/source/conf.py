@@ -2,7 +2,7 @@ from sphinx_gallery.scrapers import matplotlib_scraper
 from sphinx_gallery.sorting import FileNameSortKey
 # Get version
 from importlib.metadata import version
-release = version('obsplotlib')
+release = version('obswinlib')
 # for example take major/minor
 version = '.'.join(release.split('.')[:2])
 
@@ -25,8 +25,6 @@ extensions = [
     'numpydoc',
     'sphinx_design',
     "sphinx_togglebutton",
-    'sphinx_gallery.gen_gallery',
-
 ]
 
 templates_path = ['_templates']

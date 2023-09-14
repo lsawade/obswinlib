@@ -14,9 +14,9 @@ def queue_multiwindow_stream(
     """Uses the multiprocessing module to multiprocess your python stream.
     Extremely simple:
     1. Split stream into chunks for each processor, where each chunk contains
-       full stations so it's possible to rotate.
+    full stations so it's possible to rotate.
     2. Sends the processes to the processing queue and let's them do their
-       thing.
+    thing.
 
     Parameters
     ----------
@@ -43,13 +43,13 @@ def queue_multiwindow_stream(
 
     :Author:
         Lucas Sawade (lsawade@princeton.edu)
-
     :Last Modified:
         2021.06.13 17.50
 
     """
     if verbose:
         print("Split stream")
+
     # Split the stream into different chunks
     split_obsd, split_synt, _ = split_stream_inv(
         obsd, windowdict['station'], synt=synt, nprocs=nproc)
