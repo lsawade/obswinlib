@@ -28,7 +28,7 @@ dependencies = [
     "numpy",
     "scipy",
     "obspy",
-    "yaml",
+    "pyyaml",
     "pyflex @ git+https://github.com/lsawade/pyflex.git"
 ]
 
