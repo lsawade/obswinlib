@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Obswinlib" href="index.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 5.3.0 and Furo 2023.03.27 -->
-        <title>API - obswinlib 0.1.0.dev6+gd36fb85.d20230914 documentation</title>
+        <title>API - obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
@@ -125,7 +125,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">obswinlib 0.1.0.dev6+gd36fb85.d20230914 documentation</div></a>
+      <a href="index.html"><div class="brand">obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -136,7 +136,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -148,7 +148,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">obswinlib 0.1.0.dev6+gd36fb85.d20230914 documentation</span>
+  <span class="sidebar-brand-text">obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -187,7 +187,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -197,6 +197,473 @@
 <h1>API<a class="headerlink" href="#api" title="Permalink to this heading">#</a></h1>
 <p>All functions are available in the top-level namespace. But are defined in
 submodules modules to keep the directory structure clean.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.generate_log_content">
+<span class="sig-name descname"><span class="pre">generate_log_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#generate_log_content"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.generate_log_content" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.load_window_config_toml">
+<span class="sig-name descname"><span class="pre">load_window_config_toml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/io.html#load_window_config_toml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.load_window_config_toml" title="Permalink to this definition">#</a></dt>
+<dd><p>Load yaml and setup pyflex.Config object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.load_window_config_yaml">
+<span class="sig-name descname"><span class="pre">load_window_config_yaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/io.html#load_window_config_yaml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.load_window_config_yaml" title="Permalink to this definition">#</a></dt>
+<dd><p>Load yaml and setup pyflex.Config object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.multiwrapper">
+<span class="sig-name descname"><span class="pre">multiwrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">proc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/multiqueue.html#multiwrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.multiwrapper" title="Permalink to this definition">#</a></dt>
+<dd><p>Wraps a simple Queue/Process setup to  execute a function in parallel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>proc</strong><span class="classifier">Callable</span></dt><dd><p>Processing function</p>
+</dd>
+<dt><strong>args</strong><span class="classifier">Iterable</span></dt><dd><p>arguments, iterable of tuple</p>
+</dd>
+<dt><strong>kwargs</strong><span class="classifier">Iterable</span></dt><dd><p>keyword arguments, iterable of dictionaries</p>
+</dd>
+<dt><strong>verbose</strong><span class="classifier">bool</span></dt><dd><p>whether to print info flags</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Iterable</dt><dd><p>List of sorted results</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Lucas Sawade (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</p>
+</dd>
+<dt class="field-even">Last Modified<span class="colon">:</span></dt>
+<dd class="field-even"><p>2021.06.11 14.15</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.merge_windows">
+<span class="sig-name descname"><span class="pre">merge_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#merge_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.merge_windows" title="Permalink to this definition">#</a></dt>
+<dd><p>Merge the windows(from one event, multiple stations)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.merge_channels_window">
+<span class="sig-name descname"><span class="pre">merge_channels_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sta_win</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#merge_channels_window"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.merge_channels_window" title="Permalink to this definition">#</a></dt>
+<dd><p>Merge windows from different channels.
+This step should be done after merge instruments windows
+because after that there will only one instrument left
+on one channel.
+For example, if we have “BH” channel with 20 windows and
+“LH” has 10 windows, we will keep only the “BH” channel.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.merge_instruments_window">
+<span class="sig-name descname"><span class="pre">merge_instruments_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sta_win</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#merge_instruments_window"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.merge_instruments_window" title="Permalink to this definition">#</a></dt>
+<dd><p>Merge windows from the same channel, for example, if
+there are windows from “00.BH*” and “10.BH*”, keep only one
+with the most windows. For example, if “00.BH*” has 10
+windows and “10.BH*” has 20 windows, we will keep the
+“10.BH*” since it has more windows.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.merge_station_windows">
+<span class="sig-name descname"><span class="pre">merge_station_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#merge_station_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.merge_station_windows" title="Permalink to this definition">#</a></dt>
+<dd><p>Merge windows for one station.
+For example, you may have “00.BH”, “10.BH”, “00.LH”, “10.LH” from
+different locations and channels. You may only want to keep one
+at the very end. So:</p>
+<ol class="arabic simple">
+<li><p>select locations: keep only one location with the most
+number of windows for one channel. For example, in “00.BH” and
+“10.BH” we only keep “10.BH”.</p></li>
+<li><p>select channel: after last step, we keep only “00.BH” and “10.LH”,
+but ultimately we only want to keep one. So we may only choose
+“00.BH” since it has more windows.</p></li>
+</ol>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.pick_location_with_more_windows">
+<span class="sig-name descname"><span class="pre">pick_location_with_more_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sort_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#pick_location_with_more_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.pick_location_with_more_windows" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.pick_channel_with_more_windows">
+<span class="sig-name descname"><span class="pre">pick_channel_with_more_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sort_dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#pick_channel_with_more_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.pick_channel_with_more_windows" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.plot_window_figure">
+<span class="sig-name descname"><span class="pre">plot_window_figure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ws</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pdf'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#plot_window_figure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.plot_window_figure" title="Permalink to this definition">#</a></dt>
+<dd><p>Plot window figure out</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure_dir</strong> (<em>str</em>) – output figure directory</p></li>
+<li><p><strong>figure_id</strong> (<em>str</em>) – figure id to distinguish windows plots, for
+example, trace id could be used, like “II.AAK.00.BHZ”</p></li>
+<li><p><strong>ws</strong> (<em>pyflex.WindowSelector</em>) – window selector object from pyflex</p></li>
+<li><p><strong>_verbose</strong> (<em>bool</em>) – verbose output flag</p></li>
+<li><p><strong>figure_format</strong> (<em>str</em>) – figure format, could be “pdf”, “png” and etc.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.queue_multiwindow_stream">
+<span class="sig-name descname"><span class="pre">queue_multiwindow_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obsd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">windowdict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nproc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/queue_multiwindow_stream.html#queue_multiwindow_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.queue_multiwindow_stream" title="Permalink to this definition">#</a></dt>
+<dd><p>Uses the multiprocessing module to multiprocess your python stream.
+Extremely simple:
+1. Split stream into chunks for each processor, where each chunk contains
+full stations so it’s possible to rotate.
+2. Sends the processes to the processing queue and let’s them do their
+thing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>obsd</strong><span class="classifier">Stream</span></dt><dd><p>Observed data Stream</p>
+</dd>
+<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>Synthetic data Stream</p>
+</dd>
+<dt><strong>windowdict</strong><span class="classifier">dict</span></dt><dd><p>processing dictionary. See <code class="docutils literal notranslate"><span class="pre">lwsspy.process_stream</span></code> for what can go in
+there. It should contain <code class="docutils literal notranslate"><span class="pre">inventory</span></code></p>
+</dd>
+<dt><strong>nprocs</strong><span class="classifier">int, optional</span></dt><dd><p>number of processors, by default 4</p>
+</dd>
+<dt><strong>verbose</strong><span class="classifier">bool</span></dt><dd><p>flag whether to print some statements</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Stream</dt><dd><p>windowed observed stream</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Author<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Lucas Sawade (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</p>
+</dd>
+<dt class="field-even">Last Modified<span class="colon">:</span></dt>
+<dd class="field-even"><p>2021.06.13 17.50</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.read_toml">
+<span class="sig-name descname"><span class="pre">read_toml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/obswinlib/utils.html#read_toml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.read_toml" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.read_yaml">
+<span class="sig-name descname"><span class="pre">read_yaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/obswinlib/utils.html#read_yaml"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.read_yaml" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.sort_windows_on_channel">
+<span class="sig-name descname"><span class="pre">sort_windows_on_channel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sta_win</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#sort_windows_on_channel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.sort_windows_on_channel" title="Permalink to this definition">#</a></dt>
+<dd><p>Group windows from one station into channels and count
+the number of windows in that channel
+:param sta_win:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.sort_windows_on_channel_and_location">
+<span class="sig-name descname"><span class="pre">sort_windows_on_channel_and_location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sta_win</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#sort_windows_on_channel_and_location"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.sort_windows_on_channel_and_location" title="Permalink to this definition">#</a></dt>
+<dd><p>functions for merge_instruments_window. the windows
+will be sorted based on [chan][location]</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sta_win</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.split_stream_inv">
+<span class="sig-name descname"><span class="pre">split_stream_inv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obsd</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Inventory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nprocs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Inventory</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Inventory</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/obswinlib/utils.html#split_stream_inv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.split_stream_inv" title="Permalink to this definition">#</a></dt>
+<dd><p>Split stream and inventory into chunks for parallel processing. The
+optional synthetic stream is good for windowing. Splits synthetics and
+observations into stationwise chunks. Station-wise because we want to
+rotate the traces usually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>obsd</strong><span class="classifier">obspy.Stream</span></dt><dd><p>input stream</p>
+</dd>
+<dt><strong>inv</strong><span class="classifier">obspy.Inventory</span></dt><dd><p>input inventory</p>
+</dd>
+<dt><strong>synt</strong><span class="classifier">obspy.Stream, optional</span></dt><dd><p>input synthetic stream, by default None</p>
+</dd>
+<dt><strong>nprocs</strong><span class="classifier">int, optional</span></dt><dd><p>number of processes, by default 4</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>tuple of (obspy.Stream, obspy.Inventory) or</dt><dd><p>tuple of (obspy.Stream, obspy.Stream, obspy.Inventory)
+Processed stream(s) and inventory</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.stats_all_windows">
+<span class="sig-name descname"><span class="pre">stats_all_windows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obsd_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instrument_merge_flag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#stats_all_windows"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stats_all_windows" title="Permalink to this definition">#</a></dt>
+<dd><p>Generate window statistic information</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.stream_cost_win">
+<span class="sig-name descname"><span class="pre">stream_cost_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/obswinlib/stream_cost_win.html#stream_cost_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_cost_win" title="Permalink to this definition">#</a></dt>
+<dd><p>Takes in data and synthetics stream and computes windowed least squares
+cost. The stats object of the Traces in the stream _*must*_ contain both
+<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
+</dd>
+<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>float</dt><dd><p>cost of entire stream</p>
+</dd>
+<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.stream_grad_frechet_win">
+<span class="sig-name descname"><span class="pre">stream_grad_frechet_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsyn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/obswinlib/stream_grad_frechet_win.html#stream_grad_frechet_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_grad_frechet_win" title="Permalink to this definition">#</a></dt>
+<dd><p>Computes the gradient of a the least squares cost function wrt. 1
+parameter given its forward computation and the frechet derivative.
+The stats object of the Traces in the stream _*must*_ contain both
+<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
+</dd>
+<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
+</dd>
+<dt><strong>dsyn</strong><span class="classifier">Stream</span></dt><dd><p>frechet derivatives</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>float</dt><dd><p>gradient</p>
+</dd>
+<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.stream_grad_hess_win">
+<span class="sig-name descname"><span class="pre">stream_grad_hess_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsyn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/obswinlib/stream_grad_hess_win.html#stream_grad_hess_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_grad_hess_win" title="Permalink to this definition">#</a></dt>
+<dd><p>Computes the gradient and the approximate hessian of the cost function
+using the Frechet derivative of the forward modelled data.
+The stats object of the Traces in the stream _*must*_ contain both
+<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
+</dd>
+<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
+</dd>
+<dt><strong>dsyn</strong><span class="classifier">Stream</span></dt><dd><p>frechet derivatives</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>Tuple[float, float]</dt><dd><p>Gradient, Approximate Hessian</p>
+</dd>
+<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.Timer">
+<span class="sig-name descname"><span class="pre">Timer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plogger=&lt;built-in</span> <span class="pre">function</span> <span class="pre">print&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#Timer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.Timer" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.update_user_levels">
+<span class="sig-name descname"><span class="pre">update_user_levels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_module</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obsd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#update_user_levels"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.update_user_levels" title="Permalink to this definition">#</a></dt>
+<dd><p>Update user levels as an array using user_module</p>
+<p>This function emulates the user_functions feature in FLEXWIN. User
+has to prepare a python module that has a method called
+generate_user_levels. This module has to be passed out as a string
+(It should be formatted as you would in an import statement). And
+then, user_module is dynamically imported and the
+generate_user_levels function is called with the following
+parameters: pyflex config, obspy station data, obspy event data,
+observed and synthetic obspy traces. It is excepted that user to
+use given scalar acceptance levels as base values and generate
+acceptance level arrays as long as trace data to be given to the
+pyflex. Function should return these values in order: stalta water
+level, tshift acceptance level, dlna acceptance level,
+cc_acceptance_level, s2n_limit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_module</strong> (<em>str</em>) – user module as a string</p></li>
+<li><p><strong>config</strong> – window selection config</p></li>
+<li><p><strong>station</strong> (<em>obspy.Inventory</em><em> or </em><em>pyflex.Station</em>) – station information which provids station location to
+calculate the epicenter distance</p></li>
+<li><p><strong>event</strong> (<em>pyflex.Event</em><em>, </em><em>obspy.Catalog</em><em> or </em><em>obspy.Event</em>) – event information, providing the event information</p></li>
+<li><p><strong>observed</strong> (<em>obspy.Trace</em>) – observed trace</p></li>
+<li><p><strong>synthetic</strong> (<em>obspy.Trace</em>) – synthetic trace</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>window selection config with arrays</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pyflex.Config</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.window_on_stream">
+<span class="sig-name descname"><span class="pre">window_on_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synthetic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Inventory</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Station</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#window_on_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.window_on_stream" title="Permalink to this definition">#</a></dt>
+<dd><p>Window selection on a Stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observed</strong> (<em>obspy.Stream</em>) – observed stream</p></li>
+<li><p><strong>synthetic</strong> (<em>obspy.Stream</em>) – synthetic stream</p></li>
+<li><p><strong>config_dict</strong> (<em>dict</em>) – window selection config dictionary, for example,
+{“Z”: pyflex.Config, “R”: pyflex.Config, “T”: pyflex.Config}</p></li>
+<li><p><strong>station</strong> (<em>obspy.Inventory</em><em> or </em><em>pyflex.Station</em>) – station information which provids station location to
+calculate the epicenter distance</p></li>
+<li><p><strong>event</strong> (<em>pyflex.Event</em><em>, </em><em>obspy.Catalog</em><em> or </em><em>obspy.Event</em>) – event information, providing the event information</p></li>
+<li><p><strong>user_modules</strong> (<em>dict</em>) – user_module strings in a dict similar to config_dict.</p></li>
+<li><p><strong>figure_mode</strong> (<em>bool</em>) – output figure flag</p></li>
+<li><p><strong>figure_dir</strong> (<em>str</em>) – output figure directory</p></li>
+<li><p><strong>_verbose</strong> (<em>bool</em>) – verbose flag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.window_on_trace">
+<span class="sig-name descname"><span class="pre">window_on_trace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Trace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">syn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Trace</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Station</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Inventory</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Event</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pdf'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#window_on_trace"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.window_on_trace" title="Permalink to this definition">#</a></dt>
+<dd><p>Window selection on a trace(obspy.Trace)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>observed</strong> (<em>obspy.Trace</em>) – observed trace</p></li>
+<li><p><strong>synthetic</strong> (<em>obspy.Trace</em>) – synthetic trace</p></li>
+<li><p><strong>config</strong> – window selection config</p></li>
+<li><p><strong>station</strong> (<em>obspy.Inventory</em><em> or </em><em>pyflex.Station</em>) – station information which provids station location to
+calculate the epicenter distance</p></li>
+<li><p><strong>event</strong> (<em>pyflex.Event</em><em>, </em><em>obspy.Catalog</em><em> or </em><em>obspy.Event</em>) – event information, providing the event information</p></li>
+<li><p><strong>figure_mode</strong> (<em>bool</em>) – output figure flag</p></li>
+<li><p><strong>figure_dir</strong> (<em>str</em>) – output figure directory</p></li>
+<li><p><strong>_verbose</strong> (<em>bool</em>) – verbose flag</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.write_jsonfile">
+<span class="sig-name descname"><span class="pre">write_jsonfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/io.html#write_jsonfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.write_jsonfile" title="Permalink to this definition">#</a></dt>
+<dd><p>Write windows to a json file. Also, this requires windows to be
+type of list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>windows</strong> – list of windows</p></li>
+<li><p><strong>filename</strong> – output filename</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="obswinlib.write_txtfile">
+<span class="sig-name descname"><span class="pre">write_txtfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">windows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/io.html#write_txtfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.write_txtfile" title="Permalink to this definition">#</a></dt>
+<dd><p>Write windows to text file, for a list of windows. Notice that
+this method only works on LISTS of windows, for example,
+windows on a pair of traces.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>windows</strong> (<em>list</em>) – list of windows(from same observed and synthetic)</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – output filename</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
         </article>
@@ -234,8 +701,53 @@ submodules modules to keep the directory structure clean.</p>
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">API</a><ul>
+<li><a class="reference internal" href="#obswinlib.generate_log_content"><code class="docutils literal notranslate"><span class="pre">generate_log_content()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.load_window_config_toml"><code class="docutils literal notranslate"><span class="pre">load_window_config_toml()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.load_window_config_yaml"><code class="docutils literal notranslate"><span class="pre">load_window_config_yaml()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.multiwrapper"><code class="docutils literal notranslate"><span class="pre">multiwrapper()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.merge_windows"><code class="docutils literal notranslate"><span class="pre">merge_windows()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.merge_channels_window"><code class="docutils literal notranslate"><span class="pre">merge_channels_window()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.merge_instruments_window"><code class="docutils literal notranslate"><span class="pre">merge_instruments_window()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.merge_station_windows"><code class="docutils literal notranslate"><span class="pre">merge_station_windows()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.pick_location_with_more_windows"><code class="docutils literal notranslate"><span class="pre">pick_location_with_more_windows()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.pick_channel_with_more_windows"><code class="docutils literal notranslate"><span class="pre">pick_channel_with_more_windows()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.plot_window_figure"><code class="docutils literal notranslate"><span class="pre">plot_window_figure()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.queue_multiwindow_stream"><code class="docutils literal notranslate"><span class="pre">queue_multiwindow_stream()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.read_toml"><code class="docutils literal notranslate"><span class="pre">read_toml()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.read_yaml"><code class="docutils literal notranslate"><span class="pre">read_yaml()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.sort_windows_on_channel"><code class="docutils literal notranslate"><span class="pre">sort_windows_on_channel()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.sort_windows_on_channel_and_location"><code class="docutils literal notranslate"><span class="pre">sort_windows_on_channel_and_location()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.split_stream_inv"><code class="docutils literal notranslate"><span class="pre">split_stream_inv()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.stats_all_windows"><code class="docutils literal notranslate"><span class="pre">stats_all_windows()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.stream_cost_win"><code class="docutils literal notranslate"><span class="pre">stream_cost_win()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.stream_grad_frechet_win"><code class="docutils literal notranslate"><span class="pre">stream_grad_frechet_win()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.stream_grad_hess_win"><code class="docutils literal notranslate"><span class="pre">stream_grad_hess_win()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.Timer"><code class="docutils literal notranslate"><span class="pre">Timer()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.update_user_levels"><code class="docutils literal notranslate"><span class="pre">update_user_levels()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.window_on_stream"><code class="docutils literal notranslate"><span class="pre">window_on_stream()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.window_on_trace"><code class="docutils literal notranslate"><span class="pre">window_on_trace()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.write_jsonfile"><code class="docutils literal notranslate"><span class="pre">write_jsonfile()</span></code></a></li>
+<li><a class="reference internal" href="#obswinlib.write_txtfile"><code class="docutils literal notranslate"><span class="pre">write_txtfile()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
