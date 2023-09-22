@@ -1,6 +1,6 @@
+from .add_tapers import add_tapers
 from .io import write_jsonfile, write_txtfile, \
     load_window_config_yaml, load_window_config_toml
-
 from .multiqueue import multiwrapper
 from .queue_multiwindow_stream import queue_multiwindow_stream
 from .stream_cost_win import stream_cost_win
@@ -12,9 +12,10 @@ from .utils import split_stream_inv, Timer, read_toml, read_yaml, \
     merge_instruments_window, merge_windows, generate_log_content, \
     merge_channels_window, merge_station_windows, stats_all_windows
 from .window import window_on_stream, window_on_trace, update_user_levels, \
-    plot_window_figure
+    plot_window_figure, merge_trace_windows
 
 __all__ = [
+    'add_tapers',
     'generate_log_content',
     'load_window_config_toml',
     'load_window_config_yaml',
@@ -23,6 +24,7 @@ __all__ = [
     'merge_channels_window',
     'merge_instruments_window',
     'merge_station_windows',
+    'merge_trace_windows',
     'pick_location_with_more_windows',
     'pick_channel_with_more_windows',
     'plot_window_figure',
@@ -46,7 +48,7 @@ __all__ = [
 
 try:
     import mpi4py # noqa
-    from .mpiwindowclass import MPIWindowStream
-    __all__.append("MPIWindowStream")
+    from .mpi import mpi_window
+    __all__.append("mpi_window")
 except ImportError as e:
     print(e)

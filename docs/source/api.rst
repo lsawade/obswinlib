@@ -40,11 +40,6 @@ submodules modules to keep the directory structure clean.
 
 .. autofunction:: obswinlib.stats_all_windows
 
-.. autofunction:: obswinlib.stream_cost_win
-
-.. autofunction:: obswinlib.stream_grad_frechet_win
-
-.. autofunction:: obswinlib.stream_grad_hess_win
 
 .. autofunction:: obswinlib.Timer
 

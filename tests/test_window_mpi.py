@@ -34,12 +34,15 @@ def manual_test_mpiwindowing():
 
     if mpimode:
 
-        # Initialize MPIprocess class
-        WC = owl.MPIWindowStream()
+        from mpi4py import MPI
+        comm = MPI.COMM_WORLD
+        rank = comm.Get_rank()
+        size = comm.Get_size()
 
-        if WC.rank == 0:
+        if rank == 0:
+
             print("MPI MODE")
-            print(f"RANK: {WC.rank}")
+            print(f"RANK: {rank}")
 
             # Loading and fixing the processin dictionary
             windowdict = owl.read_yaml(WINDOWFILE)
@@ -56,11 +59,14 @@ def manual_test_mpiwindowing():
             observed = obspy.read(OBSERVED)
             synthetic = obspy.read(SYNTHETIC)
 
-            # Print stuff
-            WC.get_streams_and_windowdict(observed, synthetic, wrapwindowdict)
+        else:
+            observed = None
+            synthetic = None
+            wrapwindowdict = None
 
-        WC.window()
-
+        # Print stuff
+        windowed_stream = owl.mpi.mpi_window(observed, synthetic,
+                                             wrapwindowdict)
         # if WC.rank == 0:
         #     for _tr in WC.windowed_stream:
         #         print(_tr.id)

@@ -176,7 +176,7 @@ def window_on_stream(observed: obspy.Stream, synthetic: obspy.Stream,
                                     pyflex.Station] = None,
                      event: Union[None, obspy.core.event.Event,
                                   pyflex.Event] = None,
-                     figure_mode=False, figure_dir=None, _verbose=False):
+                     figure_mode=False, figure_dir=None, _verbose=True):
     """
     Window selection on a Stream
 
@@ -214,8 +214,10 @@ def window_on_stream(observed: obspy.Stream, synthetic: obspy.Stream,
     # all_windows = {}
 
     for component in config_dict["components"].keys():
+
         if _verbose:
             print(f"\n\n{component}\n\n")
+
         # Get component specific values
         config = copy.deepcopy(config_base)
         if config_dict["components"][component] is not None:
@@ -224,6 +226,7 @@ def window_on_stream(observed: obspy.Stream, synthetic: obspy.Stream,
 
         # Get single compenent of stream to work on it
         obs = observed.select(component=component)
+
         if _verbose:
             print(f"Length of windowobs: {len(obs)}")
         # Loop over traces
