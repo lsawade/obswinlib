@@ -2,16 +2,17 @@ import obspy
 from .utils import Timer
 from .utils import split_stream_inv
 from .window import window_on_stream
-try:
-    from mpi4py import MPI
-except ImportError as e:
-    print(e)
-    raise ImportError("MPI4PY not installed. Please install it to use MPI.")
 
 
 
 def mpi_window(obsd: obspy.Stream | None, synt: obspy.Stream | None,
                windowdict: dict | None, verbose: bool = False):
+
+    try:
+        from mpi4py import MPI
+    except ImportError as e:
+        print(e)
+        raise ImportError("MPI4PY not installed. Please install it to use MPI.")
 
 
     comm = MPI.COMM_WORLD
