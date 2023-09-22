@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Obswinlib" href="index.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 5.3.0 and Furo 2023.03.27 -->
-        <title>API - obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</title>
+        <title>API - obswinlib 0.1.0.dev9+g59e0c7b.d20230922 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=fad236701ea90a88636c2a8c73b44ae642ed2a53" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
@@ -125,7 +125,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</div></a>
+      <a href="index.html"><div class="brand">obswinlib 0.1.0.dev9+g59e0c7b.d20230922 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -148,7 +148,7 @@
       <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
-  <span class="sidebar-brand-text">obswinlib 0.1.0.dev8+g8fa4e0d.d20230914 documentation</span>
+  <span class="sidebar-brand-text">obswinlib 0.1.0.dev9+g59e0c7b.d20230922 documentation</span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -454,87 +454,6 @@ Processed stream(s) and inventory</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="obswinlib.stream_cost_win">
-<span class="sig-name descname"><span class="pre">stream_cost_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/obswinlib/stream_cost_win.html#stream_cost_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_cost_win" title="Permalink to this definition">#</a></dt>
-<dd><p>Takes in data and synthetics stream and computes windowed least squares
-cost. The stats object of the Traces in the stream _*must*_ contain both
-<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
-</dd>
-<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>float</dt><dd><p>cost of entire stream</p>
-</dd>
-<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="obswinlib.stream_grad_frechet_win">
-<span class="sig-name descname"><span class="pre">stream_grad_frechet_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsyn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/obswinlib/stream_grad_frechet_win.html#stream_grad_frechet_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_grad_frechet_win" title="Permalink to this definition">#</a></dt>
-<dd><p>Computes the gradient of a the least squares cost function wrt. 1
-parameter given its forward computation and the frechet derivative.
-The stats object of the Traces in the stream _*must*_ contain both
-<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
-</dd>
-<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
-</dd>
-<dt><strong>dsyn</strong><span class="classifier">Stream</span></dt><dd><p>frechet derivatives</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>float</dt><dd><p>gradient</p>
-</dd>
-<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="obswinlib.stream_grad_hess_win">
-<span class="sig-name descname"><span class="pre">stream_grad_hess_win</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dsyn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Stream</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">ndarray</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">ndarray</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/obswinlib/stream_grad_hess_win.html#stream_grad_hess_win"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.stream_grad_hess_win" title="Permalink to this definition">#</a></dt>
-<dd><p>Computes the gradient and the approximate hessian of the cost function
-using the Frechet derivative of the forward modelled data.
-The stats object of the Traces in the stream _*must*_ contain both
-<cite>windows</cite> and the <cite>tapers</cite> attributes!</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><dl class="simple">
-<dt><strong>data</strong><span class="classifier">Stream</span></dt><dd><p>data</p>
-</dd>
-<dt><strong>synt</strong><span class="classifier">Stream</span></dt><dd><p>synthetics</p>
-</dd>
-<dt><strong>dsyn</strong><span class="classifier">Stream</span></dt><dd><p>frechet derivatives</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>Tuple[float, float]</dt><dd><p>Gradient, Approximate Hessian</p>
-</dd>
-<dt>Last modified: Lucas Sawade, 2020.09.28 19.00 (<a class="reference external" href="mailto:lsawade&#37;&#52;&#48;princeton&#46;edu">lsawade<span>&#64;</span>princeton<span>&#46;</span>edu</a>)</dt><dd></dd>
-</dl>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="obswinlib.Timer">
 <span class="sig-name descname"><span class="pre">Timer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plogger=&lt;built-in</span> <span class="pre">function</span> <span class="pre">print&gt;</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/utils.html#Timer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.Timer" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
@@ -579,7 +498,7 @@ calculate the epicenter distance</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="obswinlib.window_on_stream">
-<span class="sig-name descname"><span class="pre">window_on_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synthetic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Inventory</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Station</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#window_on_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.window_on_stream" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">window_on_stream</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">synthetic</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Stream</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">station</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Inventory</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Station</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Event</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">figure_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/obswinlib/window.html#window_on_stream"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#obswinlib.window_on_stream" title="Permalink to this definition">#</a></dt>
 <dd><p>Window selection on a Stream</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -732,9 +651,6 @@ windows on a pair of traces.</p>
 <li><a class="reference internal" href="#obswinlib.sort_windows_on_channel_and_location"><code class="docutils literal notranslate"><span class="pre">sort_windows_on_channel_and_location()</span></code></a></li>
 <li><a class="reference internal" href="#obswinlib.split_stream_inv"><code class="docutils literal notranslate"><span class="pre">split_stream_inv()</span></code></a></li>
 <li><a class="reference internal" href="#obswinlib.stats_all_windows"><code class="docutils literal notranslate"><span class="pre">stats_all_windows()</span></code></a></li>
-<li><a class="reference internal" href="#obswinlib.stream_cost_win"><code class="docutils literal notranslate"><span class="pre">stream_cost_win()</span></code></a></li>
-<li><a class="reference internal" href="#obswinlib.stream_grad_frechet_win"><code class="docutils literal notranslate"><span class="pre">stream_grad_frechet_win()</span></code></a></li>
-<li><a class="reference internal" href="#obswinlib.stream_grad_hess_win"><code class="docutils literal notranslate"><span class="pre">stream_grad_hess_win()</span></code></a></li>
 <li><a class="reference internal" href="#obswinlib.Timer"><code class="docutils literal notranslate"><span class="pre">Timer()</span></code></a></li>
 <li><a class="reference internal" href="#obswinlib.update_user_levels"><code class="docutils literal notranslate"><span class="pre">update_user_levels()</span></code></a></li>
 <li><a class="reference internal" href="#obswinlib.window_on_stream"><code class="docutils literal notranslate"><span class="pre">window_on_stream()</span></code></a></li>
