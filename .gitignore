@@ -11,3 +11,4 @@ obsplotlib-testpypitoken
 obsplotlib-pypitoken
 examples/logo.svg
 examples/favicon.ico
+src/obswinlib/_version.py
